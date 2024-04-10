@@ -29,4 +29,15 @@ public class Podcast extends Audio{
     public void setTotalEpisodes(int totalEpisodes) {
         this.totalEpisodes = totalEpisodes;
     }
+
+    //
+
+    @Override
+    public int getClassification() {
+        if(getTotalPlays()>=2000){
+            return 9;
+        }else {
+            return 2;
+        }
+    }
 }
