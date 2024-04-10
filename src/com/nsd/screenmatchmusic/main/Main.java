@@ -1,5 +1,6 @@
 package com.nsd.screenmatchmusic.main;
 
+import com.nsd.screenmatchmusic.models.Favorites;
 import com.nsd.screenmatchmusic.models.Podcast;
 import com.nsd.screenmatchmusic.models.Song;
 
@@ -25,5 +26,8 @@ public class Main {
         System.out.println("""
                 The song %s from the album %s with a total of %d plays and %d likes
                 """.formatted(mySong.getTitle(),mySong.getAlbum(),mySong.getTotalPlays(),mySong.getTotalLikes()));
+
+        Favorites favorites = new Favorites();
+        favorites.additions(mySong);
     }
 }
