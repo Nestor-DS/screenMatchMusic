@@ -2,20 +2,9 @@
 
 ## **Diagram:**
 
-![diagram1.png](images%2Fdiagram1.png)
+![diagram.png](images%2Fdiagram.png)
 
-![attributes.png](images%2Fattributes.png)
+## **Class:**
 
-_Audio
+![diagram.png](images%2Fdiagram.png)
 
-title: String
-duration: int
-totalPlays: int
-likes: int
-releaseDate: int
-classification: int
-
-
-+ likes(): void
-+ plays(): void
-+ getters and setters
