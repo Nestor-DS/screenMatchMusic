@@ -30,4 +30,14 @@ public class Song extends Audio{
     public void setGenre(String genre) {
         this.genre = genre;
     }
+    //
+
+    @Override
+    public int getClassification() {
+        if(getTotalLikes()>5000){
+            return 8;
+        }else {
+            return 4;
+        }
+    }
 }
