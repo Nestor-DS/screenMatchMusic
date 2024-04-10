@@ -34,7 +34,7 @@ public class Podcast extends Audio{
 
     @Override
     public int getClassification() {
-        if(getTotalPlays()>=2000){
+        if(getTotalPlays()>=200){
             return 9;
         }else {
             return 2;
